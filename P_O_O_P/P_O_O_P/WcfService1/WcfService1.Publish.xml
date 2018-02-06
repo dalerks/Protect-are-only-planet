@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://184.168.181.1/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="True" userName="poopapi" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPx/RViqUtkCsT+Owqab+lwAAAAACAAAAAAADZgAAwAAAABAAAADdUJdxltxSSDgwtTTk0d1oAAAAAASAAACgAAAAEAAAAMfyIkv+5m4cOdISEk2S0JsYAAAAz0h87vGPvuWQm9k5Xa6fdN215qlSjbRoFAAAAMMqTzjouUQgqk2e1PoIpjI/qHZZ" SelectedForPublish="True">
+    <file relUrl="Service1.svc" publishTime="03/22/2012 01:04:46" />
+    <file relUrl="bin/WcfService1.pdb" publishTime="05/23/2012 20:42:35" />
+    <file relUrl="Web.config" publishTime="05/23/2012 20:45:26" />
+    <file relUrl="bin/WcfService1.dll" publishTime="05/23/2012 20:42:35" />
+  </publishProfile>
+</publishData>

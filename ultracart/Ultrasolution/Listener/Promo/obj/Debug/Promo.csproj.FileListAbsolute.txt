@@ -1,0 +1,5 @@
+C:\Users\jrounds\Dropbox\Projects\informationresults\Casino\Promo\Promo\bin\Promo.dll
+C:\Users\jrounds\Dropbox\Projects\informationresults\Casino\Promo\Promo\bin\Promo.pdb
+C:\Users\jrounds\Dropbox\Projects\informationresults\Casino\Promo\Promo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\informationresults\Casino\Promo\Promo\obj\Debug\Promo.dll
+C:\Users\jrounds\Dropbox\Projects\informationresults\Casino\Promo\Promo\obj\Debug\Promo.pdb

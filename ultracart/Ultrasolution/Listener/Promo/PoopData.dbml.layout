@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 10.875" name="PoopData">
+  <DataContextMoniker Name="/PoopDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bed377ce-c481-4a9a-a200-32adc298c481" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/PoopDataDataContext/Gift" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9cc2fd87-f3b8-4049-ab68-bf0bca519812" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f081682-ae8a-4e94-908e-db5fe0a435cd" absoluteBounds="3.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/PoopDataDataContext/Cust_to_org" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b95ce133-9dc7-491c-83a1-7d826eea33cb" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="432a4c19-d1d0-4811-b9fa-97677573a9ea" absoluteBounds="0.75, 3.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/PoopDataDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9475a05d-b536-45fa-91b2-a3b2c689d6ce" absoluteBounds="0.765, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="365b9448-b12c-46ed-b7f9-7cd0569fada8" absoluteBounds="8.875, 6.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/PoopDataDataContext/xml" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21f61032-a55f-49ca-bf98-bf9fdb5effb6" absoluteBounds="8.89, 7.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10afe50c-848c-4e20-9d5b-32fd294d36e2" absoluteBounds="4.875, 4.875, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/PoopDataDataContext/OrderHeader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c555b92b-6d7a-4443-8de2-48a8091bd6cc" absoluteBounds="4.89, 5.335, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,6 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\bin\Debug\Volsion.dll.config
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\bin\Debug\Volsion.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\bin\Debug\Volsion.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\obj\Debug\Volsion.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\Volsion\obj\Debug\Volsion.pdb

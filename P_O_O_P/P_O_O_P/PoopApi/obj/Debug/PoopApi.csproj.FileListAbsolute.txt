@@ -1,0 +1,5 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\PoopApi\bin\PoopApi.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\PoopApi\bin\PoopApi.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\PoopApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\PoopApi\obj\Debug\PoopApi.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\PoopApi\obj\Debug\PoopApi.pdb

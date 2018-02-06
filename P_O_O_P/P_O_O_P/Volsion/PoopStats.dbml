@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="poopstats" Class="PoopStatsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=poopstats.db.9057935.hostedresource.com;Initial Catalog=poopstats;Persist Security Info=True;User ID=Poopstats" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="poopstatsConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.UpdateorInsertOrderDetails" Method="UpdateorInsertOrderDetails">
+    <Parameter Name="OrderDetailID" Parameter="orderDetailID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AutoDropShip" Parameter="autoDropShip" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="FreeShippingItem" Parameter="freeShippingItem" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="GiftTrakNumber" Parameter="giftTrakNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GiftWrap" Parameter="giftWrap" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="GiftWrapCost" Parameter="giftWrapCost" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="GiftWrapNote" Parameter="giftWrapNote" Type="System.String" DbType="NChar(200)" />
+    <Parameter Name="IsKitID" Parameter="isKitID" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="KitID" Parameter="kitID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Locked" Parameter="locked" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="OnOrder_Qty" Parameter="onOrder_Qty" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OptionIDs" Parameter="optionIDs" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Options" Parameter="options" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="OrderID" Parameter="orderID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ProductCode" Parameter="productCode" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="ProductID" Parameter="productID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ProductName" Parameter="productName" Type="System.String" DbType="NChar(200)" />
+    <Parameter Name="ProductPrice" Parameter="productPrice" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="ProductWeight" Parameter="productWeight" Type="System.Int32" DbType="Int" />
+    <Parameter Name="QtyOnBackOrder" Parameter="qtyOnBackOrder" Type="System.Int32" DbType="Int" />
+    <Parameter Name="QtyOnHold" Parameter="qtyOnHold" Type="System.Int32" DbType="Int" />
+    <Parameter Name="QtyShipped" Parameter="qtyShipped" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Quantity" Parameter="quantity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TotalPrice" Parameter="totalPrice" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="Warehouses" Parameter="warehouses" Type="System.String" DbType="NChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetGiftTotal" Method="GetGiftTotal">
+    <Parameter Name="ORGID" Parameter="oRGID" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="GetGiftTotalResult">
+      <Column Name="Total" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetOrgName" Method="GetOrgName">
+    <Parameter Name="ORGID" Parameter="oRGID" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="GetOrgNameResult">
+      <Column Name="ORG_name" Type="System.String" DbType="NChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.UpdateorInsertOrders" Method="UpdateorInsertOrders">
+    <Parameter Name="OrderNumber" Parameter="orderNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AccountNumber" Parameter="accountNumber" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="AccountType" Parameter="accountType" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AddressValidated" Parameter="addressValidated" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="Affiliate_Commissionable_Value" Parameter="affiliate_Commissionable_Value" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="AuthHash" Parameter="authHash" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="NChar(200)" />
+    <Parameter Name="BillingAddress1" Parameter="billingAddress1" Type="System.String" DbType="NChar(300)" />
+    <Parameter Name="BillingAddress2" Parameter="billingAddress2" Type="System.String" DbType="NChar(300)" />
+    <Parameter Name="BillingCity" Parameter="billingCity" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="BillingCompanyName" Parameter="billingCompanyName" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="BillingCountry" Parameter="billingCountry" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="BillingFaxNumber" Parameter="billingFaxNumber" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="BillingFirstName" Parameter="billingFirstName" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="BillingLastName" Parameter="billingLastName" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="BillingPhoneNumber" Parameter="billingPhoneNumber" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="BillingPostalCode" Parameter="billingPostalCode" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="BillingState" Parameter="billingState" Type="System.String" DbType="NChar(2)" />
+    <Parameter Name="CardHoldersName" Parameter="cardHoldersName" Type="System.String" DbType="NChar(60)" />
+    <Parameter Name="CC_Last4" Parameter="cC_Last4" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CheckNumber" Parameter="checkNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CreditCardExpDate" Parameter="creditCardExpDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CreditCardIssueDate" Parameter="creditCardIssueDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CreditCardIssueNumber" Parameter="creditCardIssueNumber" Type="System.String" DbType="NChar(200)" />
+    <Parameter Name="Customer_IPAddress" Parameter="customer_IPAddress" Type="System.String" DbType="NChar(15)" />
+    <Parameter Name="CustomerID" Parameter="customerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IsAGift" Parameter="isAGift" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="Locked" Parameter="locked" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="MICR" Parameter="mICR" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="Order_Comments" Parameter="order_Comments" Type="System.String" DbType="NChar(300)" />
+    <Parameter Name="Order_Entry_System" Parameter="order_Entry_System" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="OrderDate" Parameter="orderDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="OrderStatus" Parameter="orderStatus" Type="System.String" DbType="NChar(200)" />
+    <Parameter Name="PaymentAmount" Parameter="paymentAmount" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="PaymentMethodID" Parameter="paymentMethodID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PONum" Parameter="pONum" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="RoutingNumber" Parameter="routingNumber" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="SalesTax1" Parameter="salesTax1" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="SalesTax2" Parameter="salesTax2" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="SalesTax3" Parameter="salesTax3" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="SalesTaxRate" Parameter="salesTaxRate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SalesTaxRate1" Parameter="salesTaxRate1" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SalesTaxRate2" Parameter="salesTaxRate2" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SalesTaxRate3" Parameter="salesTaxRate3" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ShipAddress1" Parameter="shipAddress1" Type="System.String" DbType="NChar(300)" />
+    <Parameter Name="ShipAddress2" Parameter="shipAddress2" Type="System.String" DbType="NChar(300)" />
+    <Parameter Name="ShipCity" Parameter="shipCity" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="ShipCompanyName" Parameter="shipCompanyName" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="ShipCountry" Parameter="shipCountry" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="ShipFaxNumber" Parameter="shipFaxNumber" Type="System.String" DbType="NChar(15)" />
+    <Parameter Name="ShipFirstName" Parameter="shipFirstName" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="ShipLastName" Parameter="shipLastName" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="ShipPhoneNumber" Parameter="shipPhoneNumber" Type="System.String" DbType="NChar(15)" />
+    <Parameter Name="Shipping_Locked" Parameter="shipping_Locked" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="ShippingMethodID" Parameter="shippingMethodID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ShipResidential" Parameter="shipResidential" Type="System.Char" DbType="NChar(1)" />
+    <Parameter Name="ShipState" Parameter="shipState" Type="System.String" DbType="NChar(2)" />
+    <Parameter Name="ShipPostalCode" Parameter="shipPostalCode" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="Stock_Priority" Parameter="stock_Priority" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Tax1_Title" Parameter="tax1_Title" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="Tax2_Title" Parameter="tax2_Title" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="Tax3_Title" Parameter="tax3_Title" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="Total_Payment_Authorized" Parameter="total_Payment_Authorized" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="Total_Payment_Received" Parameter="total_Payment_Received" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="TotalShippingCost" Parameter="totalShippingCost" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="VendorID" Parameter="vendorID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Sent" Parameter="sent" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="OrgId" Parameter="orgId" Type="System.String" DbType="NChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetXmlOrders" Method="GetXmlOrders">
+    <Parameter Name="orgid" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetXmlOrdersResult">
+      <Column Name="[XML_F52E2B61-18A1-11d1-B105-00805F49916B]" Member="XML_F52E2B61_18A1_11d1_B105_00805F49916B" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.AddError" Method="AddError">
+    <Parameter Name="error" Type="System.String" DbType="NChar(400)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

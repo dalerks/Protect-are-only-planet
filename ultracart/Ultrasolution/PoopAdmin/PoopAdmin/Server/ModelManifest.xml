@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\PoopAdmin\PoopAdmin\Common\Properties\Common.lsml" Checksum="E7F08A61F337EFF8E45FD9317E9963C6B3840C5E693F10C64C2DA8D7DC8DEA4D" />
+    <Document FullPath="C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\PoopAdmin\PoopAdmin\Server\Properties\Service.lsml" Checksum="5C0FFDF175699238C264C2E59A1339B9914393990E44C2EC212BF7FE630592D7" />
+  </Documents>
+</ModelDocumentManifest>

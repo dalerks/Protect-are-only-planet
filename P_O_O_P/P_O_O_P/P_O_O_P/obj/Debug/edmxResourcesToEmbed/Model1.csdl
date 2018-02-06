@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="poopstatsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="poopstatsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ORGs" EntityType="poopstatsModel.ORG" />
+    <EntitySet Name="GIFTs" EntityType="poopstatsModel.GIFT" />
+  </EntityContainer>
+  <EntityType Name="ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ORG_Name" Type="String" MaxLength="200" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_Address1" Type="String" MaxLength="300" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_Address2" Type="String" MaxLength="300" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_City" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_State" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_Contact" Type="String" MaxLength="300" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_Phone" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ORG_Goal" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="GIFT">
+    <Key>
+      <PropertyRef Name="SKU" />
+    </Key>
+    <Property Type="String" Name="SKU" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="ORG" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Gift1" Precision="19" Scale="4" />
+  </EntityType>
+</Schema>

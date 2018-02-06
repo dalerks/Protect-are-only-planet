@@ -1,0 +1,5 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\WcfService1\bin\WcfService1.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\WcfService1\bin\WcfService1.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\WcfService1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\WcfService1\obj\Release\WcfService1.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\WcfService1\obj\Release\WcfService1.pdb

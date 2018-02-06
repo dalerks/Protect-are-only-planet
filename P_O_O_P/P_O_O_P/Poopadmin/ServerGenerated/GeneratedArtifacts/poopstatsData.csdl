@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="poopstatsData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="DropShip">
+    <Key>
+      <PropertyRef Name="Dropshipid" />
+    </Key>
+    <Property Name="Dropshipid" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Guid" Type="Guid" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="login" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="password" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Gift">
+    <Key>
+      <PropertyRef Name="SKU" />
+    </Key>
+    <Property Name="SKU" Type="String" Nullable="false" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Gift1" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="DropShipID" Type="Int32" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Name" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Address1" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Address2" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_City" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_State" Type="String" MaxLength="2" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Contact" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Phone" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ORG_Goal" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="Enabled" Type="Boolean" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Batch">
+    <Key>
+      <PropertyRef Name="Batchid" />
+    </Key>
+    <Property Name="Batchid" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="DateStamp" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="DropShipID" Type="Int32" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Order_Detail">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+    </Key>
+    <Property Name="OrderDetailID" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="AutoDropShip" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="FreeShippingItem" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="GiftTrakNumber" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrap" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrapCost" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrapNote" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="IsKitID" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="KitID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Locked" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="OnOrder_Qty" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="OptionIDs" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Options" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="OrderID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ProductCode" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ProductID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ProductName" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ProductPrice" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="ProductWeight" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="QtyOnBackOrder" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="QtyOnHold" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="QtyShipped" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Quantity" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="Warehouses" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Sent" Type="Int32" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Event">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" ConcurrencyMode="Fixed" />
+    <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="EventCode" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="EventDetailCode" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Message" Type="String" MaxLength="1024" ConcurrencyMode="Fixed" />
+    <Property Name="ApplicationPath" Type="String" MaxLength="256" ConcurrencyMode="Fixed" />
+    <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" ConcurrencyMode="Fixed" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" ConcurrencyMode="Fixed" />
+    <Property Name="RequestUrl" Type="String" MaxLength="1024" ConcurrencyMode="Fixed" />
+    <Property Name="ExceptionType" Type="String" MaxLength="256" ConcurrencyMode="Fixed" />
+    <Property Name="Details1" Type="String" MaxLength="Max" ConcurrencyMode="None" />
+  </EntityType>
+  <EntityType Name="c_Error">
+    <Key>
+      <PropertyRef Name="ErrorId" />
+    </Key>
+    <Property Name="ErrorId" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Message" Type="String" MaxLength="400" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="TimeStamp" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="XML">
+    <Key>
+      <PropertyRef Name="XMLID" />
+    </Key>
+    <Property Name="XMLID" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="DateRetrived" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="XML1" Type="String" MaxLength="Max" ConcurrencyMode="None" />
+    <Property Name="OrderCount" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Source" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="AccountNumber" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="AccountType" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="AddressValidated" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Affiliate_Commissionable_Value" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="AuthHash" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BankName" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingAddress1" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingAddress2" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingCity" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingCompanyName" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingCountry" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingFaxNumber" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingFirstName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingLastName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingPhoneNumber" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingPostalCode" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="BillingState" Type="String" MaxLength="2" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="CardHoldersName" Type="String" MaxLength="60" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="CC_Last4" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="CheckNumber" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="CreditCardExpDate" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="CreditCardIssueDate" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="CreditCardIssueNumber" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Customer_IPAddress" Type="String" MaxLength="15" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="CustomerID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="IsAGift" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Locked" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="MICR" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Order_Comments" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Order_Entry_System" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="OrderStatus" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="PaymentAmount" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="PaymentMethodID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="PONum" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="RoutingNumber" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTax1" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTax2" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTax3" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTaxRate" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTaxRate1" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTaxRate2" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="SalesTaxRate3" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ShipAddress1" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipAddress2" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCity" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCompanyName" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCountry" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipFaxNumber" Type="String" MaxLength="15" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipFirstName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipLastName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipPhoneNumber" Type="String" MaxLength="15" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Shipping_Locked" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShippingMethodID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ShipResidential" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipState" Type="String" MaxLength="2" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Stock_Priority" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Tax1_Title" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Tax2_Title" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Tax3_Title" Type="String" MaxLength="20" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Total_Payment_Authorized" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="Total_Payment_Received" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="TotalShippingCost" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="VendorID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Sent" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="OrgID" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipPostalCode" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Orders_For_Art">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+    </Key>
+    <Property Name="ShipFirstName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipLastName" Type="String" MaxLength="30" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCompanyName" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipAddress1" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipAddress2" Type="String" MaxLength="300" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCity" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipState" Type="String" MaxLength="2" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipPostalCode" Type="String" MaxLength="10" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipCountry" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipPhoneNumber" Type="String" MaxLength="15" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="Shipping_Locked" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShippingMethodID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ShipResidential" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShipFaxNumber" Type="String" MaxLength="15" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="OrderDetailID" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrap" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="GiftTrakNumber" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrapCost" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="GiftWrapNote" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="IsKitID" Type="String" MaxLength="1" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="KitID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="OnOrder_Qty" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="OptionIDs" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Options" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="OrderID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ProductCode" Type="String" MaxLength="100" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ProductID" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="ProductName" Type="String" MaxLength="200" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ProductPrice" Type="Decimal" Precision="19" Scale="4" ConcurrencyMode="Fixed" />
+    <Property Name="ProductWeight" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Sent" Type="Int32" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityContainer Name="poopstatsDataObjectContext">
+    <EntitySet Name="DropShips" EntityType="poopstatsData.DropShip" />
+    <EntitySet Name="Gifts" EntityType="poopstatsData.Gift" />
+    <EntitySet Name="ORGs" EntityType="poopstatsData.ORG" />
+    <EntitySet Name="Batches" EntityType="poopstatsData.Batch" />
+    <EntitySet Name="Order_Details" EntityType="poopstatsData.Order_Detail" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="poopstatsData.aspnet_WebEvent_Event" />
+    <EntitySet Name="Errors" EntityType="poopstatsData.c_Error" />
+    <EntitySet Name="XMLs" EntityType="poopstatsData.XML" />
+    <EntitySet Name="Orders" EntityType="poopstatsData.Order" />
+    <EntitySet Name="Orders_For_Arts" EntityType="poopstatsData.Orders_For_Art" />
+  </EntityContainer>
+</Schema>

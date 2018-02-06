@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="poopstatsDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="poopstatsDataStore">
+    <EntitySet Name="DropShip" EntityType="poopstatsDataStore.DropShip" store:Type="Tables" Schema="dbo" Table="DropShip" />
+    <EntitySet Name="Gift" EntityType="poopstatsDataStore.Gift" store:Type="Tables" Schema="dbo" Table="Gift" />
+    <EntitySet Name="ORG" EntityType="poopstatsDataStore.ORG" store:Type="Tables" Schema="dbo" Table="ORG" />
+    <EntitySet Name="Batch" EntityType="poopstatsDataStore.Batch" store:Type="Tables" Schema="dbo" Table="Batch" />
+    <EntitySet Name="Order_Details" EntityType="poopstatsDataStore.Order_Detail" store:Type="Tables" Schema="dbo" Table="Order_Details" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="poopstatsDataStore.aspnet_WebEvent_Event" store:Type="Tables" Schema="dbo" Table="aspnet_WebEvent_Events" />
+    <EntitySet Name="Error" EntityType="poopstatsDataStore.c_Error" store:Type="Tables" Schema="dbo" Table="Error" />
+    <EntitySet Name="XML" EntityType="poopstatsDataStore.XML" store:Type="Tables" Schema="dbo" Table="XML" />
+    <EntitySet Name="Orders" EntityType="poopstatsDataStore.Order" store:Type="Tables" Schema="dbo" Table="Orders" />
+    <EntitySet Name="Orders_For_Art" EntityType="poopstatsDataStore.Orders_For_Art" store:Type="Tables" Schema="dbo" Table="Orders_For_Art" />
+  </EntityContainer>
+  <EntityType Name="DropShip">
+    <Key>
+      <PropertyRef Name="Dropshipid" />
+    </Key>
+    <Property Name="Dropshipid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Guid" Type="uniqueidentifier" />
+    <Property Name="Name" Type="nchar" MaxLength="300" />
+    <Property Name="login" Type="nchar" MaxLength="10" />
+    <Property Name="password" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Gift">
+    <Key>
+      <PropertyRef Name="SKU" />
+    </Key>
+    <Property Name="SKU" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nchar" MaxLength="200" />
+    <Property Name="ORG" Type="nchar" MaxLength="10" />
+    <Property Name="Gift" Type="money" />
+    <Property Name="DropShipID" Type="int" />
+  </EntityType>
+  <EntityType Name="ORG">
+    <Key>
+      <PropertyRef Name="ORG_ID" />
+    </Key>
+    <Property Name="ORG_ID" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="ORG_Name" Type="nchar" MaxLength="200" />
+    <Property Name="ORG_Address1" Type="nchar" MaxLength="300" />
+    <Property Name="ORG_Address2" Type="nchar" MaxLength="300" />
+    <Property Name="ORG_City" Type="nchar" MaxLength="100" />
+    <Property Name="ORG_State" Type="nchar" MaxLength="2" />
+    <Property Name="ORG_Contact" Type="nchar" MaxLength="300" />
+    <Property Name="ORG_Phone" Type="nchar" MaxLength="10" />
+    <Property Name="ORG_Goal" Type="money" />
+    <Property Name="Enabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="Batch">
+    <Key>
+      <PropertyRef Name="Batchid" />
+    </Key>
+    <Property Name="Batchid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="DropShipID" Type="int" />
+  </EntityType>
+  <EntityType Name="Order_Detail">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+    </Key>
+    <Property Name="OrderDetailID" Type="int" Nullable="false" />
+    <Property Name="AutoDropShip" Type="nchar" MaxLength="1" />
+    <Property Name="FreeShippingItem" Type="nchar" MaxLength="1" />
+    <Property Name="GiftTrakNumber" Type="int" />
+    <Property Name="GiftWrap" Type="nchar" MaxLength="1" />
+    <Property Name="GiftWrapCost" Type="money" />
+    <Property Name="GiftWrapNote" Type="nchar" MaxLength="200" />
+    <Property Name="IsKitID" Type="nchar" MaxLength="1" />
+    <Property Name="KitID" Type="int" />
+    <Property Name="Locked" Type="nchar" MaxLength="1" />
+    <Property Name="OnOrder_Qty" Type="int" />
+    <Property Name="OptionIDs" Type="int" />
+    <Property Name="Options" Type="nchar" MaxLength="100" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="100" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ProductName" Type="nchar" MaxLength="200" />
+    <Property Name="ProductPrice" Type="money" />
+    <Property Name="ProductWeight" Type="int" />
+    <Property Name="QtyOnBackOrder" Type="int" />
+    <Property Name="QtyOnHold" Type="int" />
+    <Property Name="QtyShipped" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="Warehouses" Type="nchar" MaxLength="20" />
+    <Property Name="Sent" Type="int" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Event">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+    <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+    <Property Name="EventTime" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventCode" Type="int" Nullable="false" />
+    <Property Name="EventDetailCode" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+    <Property Name="Details" Type="ntext" />
+  </EntityType>
+  <EntityType Name="c_Error">
+    <Key>
+      <PropertyRef Name="ErrorId" />
+    </Key>
+    <Property Name="ErrorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="nchar" MaxLength="400" />
+    <Property Name="TimeStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="XML">
+    <Key>
+      <PropertyRef Name="XMLID" />
+    </Key>
+    <Property Name="XMLID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateRetrived" Type="datetime" />
+    <Property Name="XML" Type="xml" />
+    <Property Name="OrderCount" Type="int" />
+    <Property Name="Source" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="OrderNumber" Type="int" Nullable="false" />
+    <Property Name="AccountNumber" Type="nchar" MaxLength="100" />
+    <Property Name="AccountType" Type="nchar" MaxLength="10" />
+    <Property Name="AddressValidated" Type="nchar" MaxLength="1" />
+    <Property Name="Affiliate_Commissionable_Value" Type="money" />
+    <Property Name="AuthHash" Type="nchar" MaxLength="100" />
+    <Property Name="BankName" Type="nchar" MaxLength="200" />
+    <Property Name="BillingAddress1" Type="nchar" MaxLength="300" />
+    <Property Name="BillingAddress2" Type="nchar" MaxLength="300" />
+    <Property Name="BillingCity" Type="nchar" MaxLength="100" />
+    <Property Name="BillingCompanyName" Type="nchar" MaxLength="100" />
+    <Property Name="BillingCountry" Type="nchar" MaxLength="20" />
+    <Property Name="BillingFaxNumber" Type="nchar" MaxLength="10" />
+    <Property Name="BillingFirstName" Type="nchar" MaxLength="30" />
+    <Property Name="BillingLastName" Type="nchar" MaxLength="30" />
+    <Property Name="BillingPhoneNumber" Type="nchar" MaxLength="10" />
+    <Property Name="BillingPostalCode" Type="nchar" MaxLength="10" />
+    <Property Name="BillingState" Type="nchar" MaxLength="2" />
+    <Property Name="CardHoldersName" Type="nchar" MaxLength="60" />
+    <Property Name="CC_Last4" Type="int" />
+    <Property Name="CheckNumber" Type="int" />
+    <Property Name="CreditCardExpDate" Type="datetime" />
+    <Property Name="CreditCardIssueDate" Type="datetime" />
+    <Property Name="CreditCardIssueNumber" Type="nchar" MaxLength="200" />
+    <Property Name="Customer_IPAddress" Type="nchar" MaxLength="15" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="IsAGift" Type="nchar" MaxLength="1" />
+    <Property Name="Locked" Type="nchar" MaxLength="1" />
+    <Property Name="MICR" Type="nchar" MaxLength="10" />
+    <Property Name="Order_Comments" Type="nchar" MaxLength="300" />
+    <Property Name="Order_Entry_System" Type="nchar" MaxLength="100" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="OrderStatus" Type="nchar" MaxLength="200" />
+    <Property Name="PaymentAmount" Type="money" />
+    <Property Name="PaymentMethodID" Type="int" />
+    <Property Name="PONum" Type="nchar" MaxLength="20" />
+    <Property Name="RoutingNumber" Type="nchar" MaxLength="20" />
+    <Property Name="SalesTax1" Type="money" />
+    <Property Name="SalesTax2" Type="money" />
+    <Property Name="SalesTax3" Type="money" />
+    <Property Name="SalesTaxRate" Type="int" />
+    <Property Name="SalesTaxRate1" Type="int" />
+    <Property Name="SalesTaxRate2" Type="int" />
+    <Property Name="SalesTaxRate3" Type="int" />
+    <Property Name="ShipAddress1" Type="nchar" MaxLength="300" />
+    <Property Name="ShipAddress2" Type="nchar" MaxLength="300" />
+    <Property Name="ShipCity" Type="nchar" MaxLength="100" />
+    <Property Name="ShipCompanyName" Type="nchar" MaxLength="100" />
+    <Property Name="ShipCountry" Type="nchar" MaxLength="100" />
+    <Property Name="ShipFaxNumber" Type="nchar" MaxLength="15" />
+    <Property Name="ShipFirstName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipLastName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipPhoneNumber" Type="nchar" MaxLength="15" />
+    <Property Name="Shipping_Locked" Type="nchar" MaxLength="1" />
+    <Property Name="ShippingMethodID" Type="int" />
+    <Property Name="ShipResidential" Type="nchar" MaxLength="1" />
+    <Property Name="ShipState" Type="nchar" MaxLength="2" />
+    <Property Name="Stock_Priority" Type="int" />
+    <Property Name="Tax1_Title" Type="nchar" MaxLength="20" />
+    <Property Name="Tax2_Title" Type="nchar" MaxLength="20" />
+    <Property Name="Tax3_Title" Type="nchar" MaxLength="20" />
+    <Property Name="Total_Payment_Authorized" Type="money" />
+    <Property Name="Total_Payment_Received" Type="money" />
+    <Property Name="TotalShippingCost" Type="money" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="Sent" Type="bit" />
+    <Property Name="OrgID" Type="nchar" MaxLength="10" />
+    <Property Name="ShipPostalCode" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Orders_For_Art">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+    </Key>
+    <Property Name="ShipFirstName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipLastName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipCompanyName" Type="nchar" MaxLength="100" />
+    <Property Name="ShipAddress1" Type="nchar" MaxLength="300" />
+    <Property Name="ShipAddress2" Type="nchar" MaxLength="300" />
+    <Property Name="ShipCity" Type="nchar" MaxLength="100" />
+    <Property Name="ShipState" Type="nchar" MaxLength="2" />
+    <Property Name="ShipPostalCode" Type="nchar" MaxLength="10" />
+    <Property Name="ShipCountry" Type="nchar" MaxLength="100" />
+    <Property Name="ShipPhoneNumber" Type="nchar" MaxLength="15" />
+    <Property Name="Shipping_Locked" Type="nchar" MaxLength="1" />
+    <Property Name="ShippingMethodID" Type="int" />
+    <Property Name="ShipResidential" Type="nchar" MaxLength="1" />
+    <Property Name="ShipFaxNumber" Type="nchar" MaxLength="15" />
+    <Property Name="OrderDetailID" Type="int" Nullable="false" />
+    <Property Name="GiftWrap" Type="nchar" MaxLength="1" />
+    <Property Name="GiftTrakNumber" Type="int" />
+    <Property Name="GiftWrapCost" Type="money" />
+    <Property Name="GiftWrapNote" Type="nchar" MaxLength="200" />
+    <Property Name="IsKitID" Type="nchar" MaxLength="1" />
+    <Property Name="KitID" Type="int" />
+    <Property Name="OnOrder_Qty" Type="int" />
+    <Property Name="OptionIDs" Type="int" />
+    <Property Name="Options" Type="nchar" MaxLength="100" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="100" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ProductName" Type="nchar" MaxLength="200" />
+    <Property Name="ProductPrice" Type="money" />
+    <Property Name="ProductWeight" Type="int" />
+    <Property Name="Sent" Type="int" />
+  </EntityType>
+</Schema>

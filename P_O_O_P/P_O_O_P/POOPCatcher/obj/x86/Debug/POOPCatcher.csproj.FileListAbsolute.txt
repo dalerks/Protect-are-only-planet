@@ -1,0 +1,6 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\bin\Debug\POOPCatcher.exe
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\bin\Debug\POOPCatcher.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\obj\x86\Debug\POOPCatcher.exe
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\obj\x86\Debug\POOPCatcher.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\POOPCatcher\bin\Debug\POOPCatcher.exe.config

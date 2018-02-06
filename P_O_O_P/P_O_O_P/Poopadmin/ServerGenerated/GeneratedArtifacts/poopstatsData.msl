@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="poopstatsDataObjectContext" StorageEntityContainer="poopstatsDataStore">
+    <EntitySetMapping Name="DropShips">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.DropShip)">
+        <MappingFragment StoreEntitySet="DropShip">
+          <ScalarProperty Name="Dropshipid" ColumnName="Dropshipid" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gifts">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.Gift)">
+        <MappingFragment StoreEntitySet="Gift">
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ORG" ColumnName="ORG" />
+          <ScalarProperty Name="Gift1" ColumnName="Gift" />
+          <ScalarProperty Name="DropShipID" ColumnName="DropShipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORGs">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.ORG)">
+        <MappingFragment StoreEntitySet="ORG">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_Name" ColumnName="ORG_Name" />
+          <ScalarProperty Name="ORG_Address1" ColumnName="ORG_Address1" />
+          <ScalarProperty Name="ORG_Address2" ColumnName="ORG_Address2" />
+          <ScalarProperty Name="ORG_City" ColumnName="ORG_City" />
+          <ScalarProperty Name="ORG_State" ColumnName="ORG_State" />
+          <ScalarProperty Name="ORG_Contact" ColumnName="ORG_Contact" />
+          <ScalarProperty Name="ORG_Phone" ColumnName="ORG_Phone" />
+          <ScalarProperty Name="ORG_Goal" ColumnName="ORG_Goal" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.Batch)">
+        <MappingFragment StoreEntitySet="Batch">
+          <ScalarProperty Name="Batchid" ColumnName="Batchid" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="DropShipID" ColumnName="DropShipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Details">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.Order_Detail)">
+        <MappingFragment StoreEntitySet="Order_Details">
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+          <ScalarProperty Name="AutoDropShip" ColumnName="AutoDropShip" />
+          <ScalarProperty Name="FreeShippingItem" ColumnName="FreeShippingItem" />
+          <ScalarProperty Name="GiftTrakNumber" ColumnName="GiftTrakNumber" />
+          <ScalarProperty Name="GiftWrap" ColumnName="GiftWrap" />
+          <ScalarProperty Name="GiftWrapCost" ColumnName="GiftWrapCost" />
+          <ScalarProperty Name="GiftWrapNote" ColumnName="GiftWrapNote" />
+          <ScalarProperty Name="IsKitID" ColumnName="IsKitID" />
+          <ScalarProperty Name="KitID" ColumnName="KitID" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="OnOrder_Qty" ColumnName="OnOrder_Qty" />
+          <ScalarProperty Name="OptionIDs" ColumnName="OptionIDs" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="ProductWeight" ColumnName="ProductWeight" />
+          <ScalarProperty Name="QtyOnBackOrder" ColumnName="QtyOnBackOrder" />
+          <ScalarProperty Name="QtyOnHold" ColumnName="QtyOnHold" />
+          <ScalarProperty Name="QtyShipped" ColumnName="QtyShipped" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Warehouses" ColumnName="Warehouses" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.aspnet_WebEvent_Event)">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="Details1" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Errors">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.c_Error)">
+        <MappingFragment StoreEntitySet="Error">
+          <ScalarProperty Name="ErrorId" ColumnName="ErrorId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XMLs">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.XML)">
+        <MappingFragment StoreEntitySet="XML">
+          <ScalarProperty Name="XMLID" ColumnName="XMLID" />
+          <ScalarProperty Name="DateRetrived" ColumnName="DateRetrived" />
+          <ScalarProperty Name="XML1" ColumnName="XML" />
+          <ScalarProperty Name="OrderCount" ColumnName="OrderCount" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.Order)">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AddressValidated" ColumnName="AddressValidated" />
+          <ScalarProperty Name="Affiliate_Commissionable_Value" ColumnName="Affiliate_Commissionable_Value" />
+          <ScalarProperty Name="AuthHash" ColumnName="AuthHash" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BillingAddress1" ColumnName="BillingAddress1" />
+          <ScalarProperty Name="BillingAddress2" ColumnName="BillingAddress2" />
+          <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+          <ScalarProperty Name="BillingCompanyName" ColumnName="BillingCompanyName" />
+          <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+          <ScalarProperty Name="BillingFaxNumber" ColumnName="BillingFaxNumber" />
+          <ScalarProperty Name="BillingFirstName" ColumnName="BillingFirstName" />
+          <ScalarProperty Name="BillingLastName" ColumnName="BillingLastName" />
+          <ScalarProperty Name="BillingPhoneNumber" ColumnName="BillingPhoneNumber" />
+          <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+          <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+          <ScalarProperty Name="CardHoldersName" ColumnName="CardHoldersName" />
+          <ScalarProperty Name="CC_Last4" ColumnName="CC_Last4" />
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="CreditCardExpDate" ColumnName="CreditCardExpDate" />
+          <ScalarProperty Name="CreditCardIssueDate" ColumnName="CreditCardIssueDate" />
+          <ScalarProperty Name="CreditCardIssueNumber" ColumnName="CreditCardIssueNumber" />
+          <ScalarProperty Name="Customer_IPAddress" ColumnName="Customer_IPAddress" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="IsAGift" ColumnName="IsAGift" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="MICR" ColumnName="MICR" />
+          <ScalarProperty Name="Order_Comments" ColumnName="Order_Comments" />
+          <ScalarProperty Name="Order_Entry_System" ColumnName="Order_Entry_System" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PONum" ColumnName="PONum" />
+          <ScalarProperty Name="RoutingNumber" ColumnName="RoutingNumber" />
+          <ScalarProperty Name="SalesTax1" ColumnName="SalesTax1" />
+          <ScalarProperty Name="SalesTax2" ColumnName="SalesTax2" />
+          <ScalarProperty Name="SalesTax3" ColumnName="SalesTax3" />
+          <ScalarProperty Name="SalesTaxRate" ColumnName="SalesTaxRate" />
+          <ScalarProperty Name="SalesTaxRate1" ColumnName="SalesTaxRate1" />
+          <ScalarProperty Name="SalesTaxRate2" ColumnName="SalesTaxRate2" />
+          <ScalarProperty Name="SalesTaxRate3" ColumnName="SalesTaxRate3" />
+          <ScalarProperty Name="ShipAddress1" ColumnName="ShipAddress1" />
+          <ScalarProperty Name="ShipAddress2" ColumnName="ShipAddress2" />
+          <ScalarProperty Name="ShipCity" ColumnName="ShipCity" />
+          <ScalarProperty Name="ShipCompanyName" ColumnName="ShipCompanyName" />
+          <ScalarProperty Name="ShipCountry" ColumnName="ShipCountry" />
+          <ScalarProperty Name="ShipFaxNumber" ColumnName="ShipFaxNumber" />
+          <ScalarProperty Name="ShipFirstName" ColumnName="ShipFirstName" />
+          <ScalarProperty Name="ShipLastName" ColumnName="ShipLastName" />
+          <ScalarProperty Name="ShipPhoneNumber" ColumnName="ShipPhoneNumber" />
+          <ScalarProperty Name="Shipping_Locked" ColumnName="Shipping_Locked" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ShipResidential" ColumnName="ShipResidential" />
+          <ScalarProperty Name="ShipState" ColumnName="ShipState" />
+          <ScalarProperty Name="Stock_Priority" ColumnName="Stock_Priority" />
+          <ScalarProperty Name="Tax1_Title" ColumnName="Tax1_Title" />
+          <ScalarProperty Name="Tax2_Title" ColumnName="Tax2_Title" />
+          <ScalarProperty Name="Tax3_Title" ColumnName="Tax3_Title" />
+          <ScalarProperty Name="Total_Payment_Authorized" ColumnName="Total_Payment_Authorized" />
+          <ScalarProperty Name="Total_Payment_Received" ColumnName="Total_Payment_Received" />
+          <ScalarProperty Name="TotalShippingCost" ColumnName="TotalShippingCost" />
+          <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+          <ScalarProperty Name="OrgID" ColumnName="OrgID" />
+          <ScalarProperty Name="ShipPostalCode" ColumnName="ShipPostalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders_For_Arts">
+      <EntityTypeMapping TypeName="IsTypeOf(poopstatsData.Orders_For_Art)">
+        <MappingFragment StoreEntitySet="Orders_For_Art">
+          <ScalarProperty Name="ShipFirstName" ColumnName="ShipFirstName" />
+          <ScalarProperty Name="ShipLastName" ColumnName="ShipLastName" />
+          <ScalarProperty Name="ShipCompanyName" ColumnName="ShipCompanyName" />
+          <ScalarProperty Name="ShipAddress1" ColumnName="ShipAddress1" />
+          <ScalarProperty Name="ShipAddress2" ColumnName="ShipAddress2" />
+          <ScalarProperty Name="ShipCity" ColumnName="ShipCity" />
+          <ScalarProperty Name="ShipState" ColumnName="ShipState" />
+          <ScalarProperty Name="ShipPostalCode" ColumnName="ShipPostalCode" />
+          <ScalarProperty Name="ShipCountry" ColumnName="ShipCountry" />
+          <ScalarProperty Name="ShipPhoneNumber" ColumnName="ShipPhoneNumber" />
+          <ScalarProperty Name="Shipping_Locked" ColumnName="Shipping_Locked" />
+          <ScalarProperty Name="ShippingMethodID" ColumnName="ShippingMethodID" />
+          <ScalarProperty Name="ShipResidential" ColumnName="ShipResidential" />
+          <ScalarProperty Name="ShipFaxNumber" ColumnName="ShipFaxNumber" />
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+          <ScalarProperty Name="GiftWrap" ColumnName="GiftWrap" />
+          <ScalarProperty Name="GiftTrakNumber" ColumnName="GiftTrakNumber" />
+          <ScalarProperty Name="GiftWrapCost" ColumnName="GiftWrapCost" />
+          <ScalarProperty Name="GiftWrapNote" ColumnName="GiftWrapNote" />
+          <ScalarProperty Name="IsKitID" ColumnName="IsKitID" />
+          <ScalarProperty Name="KitID" ColumnName="KitID" />
+          <ScalarProperty Name="OnOrder_Qty" ColumnName="OnOrder_Qty" />
+          <ScalarProperty Name="OptionIDs" ColumnName="OptionIDs" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="ProductWeight" ColumnName="ProductWeight" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

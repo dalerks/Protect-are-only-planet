@@ -1,0 +1,6 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.exe
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.pdb

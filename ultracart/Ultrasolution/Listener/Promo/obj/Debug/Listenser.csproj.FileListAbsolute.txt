@@ -1,0 +1,5 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\Listener\Promo\obj\Debug\Promo.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\Listener\Promo\bin\Promo.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\Listener\Promo\bin\Promo.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\Listener\Promo\obj\Debug\Promo.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\ultracart\Ultrasolution\Listener\Promo\obj\Debug\Listenser.csprojResolveAssemblyReference.cache

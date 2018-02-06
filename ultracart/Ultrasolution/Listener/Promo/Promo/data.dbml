@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GC_PC_SANDBOX" Class="dataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=207.211.8.150,2499;Initial Catalog=GC_PC_SANDBOX;Persist Security Info=True;User ID=jrounds" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GC_PC_SANDBOXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Test_xml" Member="Test_xmls">
+    <Type Name="Test_xml">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Xml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

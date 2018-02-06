@@ -1,0 +1,5 @@
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\SilverlightClassLibrary1\Bin\Debug\SilverlightClassLibrary1.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\SilverlightClassLibrary1\Bin\Debug\SilverlightClassLibrary1.pdb
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\SilverlightClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\SilverlightClassLibrary1\obj\Debug\SilverlightClassLibrary1.dll
+C:\Users\jrounds\Dropbox\Projects\Freelancer_Projects\P_O_O_P\P_O_O_P\P_O_O_P\SilverlightClassLibrary1\obj\Debug\SilverlightClassLibrary1.pdb

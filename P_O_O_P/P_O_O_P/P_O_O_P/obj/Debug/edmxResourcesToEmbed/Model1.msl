@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="poopstatsModelStoreContainer" CdmEntityContainer="poopstatsEntities">
+    <EntitySetMapping Name="ORGs">
+      <EntityTypeMapping TypeName="poopstatsModel.ORG">
+        <MappingFragment StoreEntitySet="ORG">
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="ORG_Name" ColumnName="ORG_Name" />
+          <ScalarProperty Name="ORG_Address1" ColumnName="ORG_Address1" />
+          <ScalarProperty Name="ORG_Address2" ColumnName="ORG_Address2" />
+          <ScalarProperty Name="ORG_City" ColumnName="ORG_City" />
+          <ScalarProperty Name="ORG_State" ColumnName="ORG_State" />
+          <ScalarProperty Name="ORG_Contact" ColumnName="ORG_Contact" />
+          <ScalarProperty Name="ORG_Phone" ColumnName="ORG_Phone" />
+          <ScalarProperty Name="ORG_Goal" ColumnName="ORG_Goal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIFTs">
+      <EntityTypeMapping TypeName="poopstatsModel.GIFT">
+        <MappingFragment StoreEntitySet="GIFT">
+          <ScalarProperty Name="Gift1" ColumnName="Gift" />
+          <ScalarProperty Name="ORG" ColumnName="ORG" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

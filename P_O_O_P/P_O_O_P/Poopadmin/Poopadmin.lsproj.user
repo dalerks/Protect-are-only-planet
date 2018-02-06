@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EnableENC>False</EnableENC>
+    <ProjectView>ProjectFiles</ProjectView>
+    <ServerPort>56157</ServerPort>
+    <GrantedPermissions>
+    </GrantedPermissions>
+    <PublishConnectionString>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+zofnmy+60ip30Iav6hAnAAAAAACAAAAAAADZgAAwAAAABAAAACbVD8owLzDVqzw44zZyHWDAAAAAASAAACgAAAAEAAAAMXYpGVDrjP8qrkDJCPTiFzwAAAABLlFw36WMpgUYEymIKJWuJnT6+BuROJ7utGv5YQ9nC5hQuQKFKrPN5EKN4/cEqnlgK2OU6Pdjmli1Ko4cDC+ksL+oHH3IcVzdSba5ILYZOMSW6yrn7hIpbtPoAacezuaHY1m5g54Wzc3Vh8BlIcB1YsmVXKzf3z6rTAQyeosCz1PijpKcjg3jEMH2HRfyF7K7TKd00RtJmJr2GTSJIub5nQoXkbDotouNnbMv+v8n4rntFuIUKaWzaMkY/zzT3Vzj1Kg/VyibQQoHZhN/tcHpBYZ5PQWqZISLu9KzfQJ8GUR5KURAZp9OwcX5Bl9eaRDFAAAANYmePvVmH+SianvDzGkb9lQH9VH</PublishConnectionString>
+    <PublishSchemaConnectionString />
+    <ClientConnectionString>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+zofnmy+60ip30Iav6hAnAAAAAACAAAAAAADZgAAwAAAABAAAABdHuE6SOAfohF8AZhGw6qAAAAAAASAAACgAAAAEAAAAHM3iFxRBp98wTCvcGXHHqDwAAAAfTFUXdvaJ79GWDdbGxGyje7q73xAyPhzCZ13ZCSFbmmiZpxQg8CUvjhkc/KKHEezq9qT6u6jcvlHP6zd+6PCimCEZgm49dYaFwIDzDPpHH7Uk9z6FfRe/G09G/lletZWhHIaF29Jc1VuLQ7qDH3ArlNx+AnpqmfHtj5qNiZd4emqv6UbD8moiUKCeo1WvYhKdRhFXx30pRrcLIn3ZgbcBFU3Gu9CHg/vbs9RZoVIVewn64Yyc8p4e9pV8B5od2CI+k5OVUZPXTXKMKGyk7ko55NRuaLur/BHc2Qf9+lBJBHZw+HK98+H98+mVKnT3pTsFAAAAFjVm6Uo/ED9tNd+GVgmnyVNCU57</ClientConnectionString>
+    <AdministratorPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+zofnmy+60ip30Iav6hAnAAAAAACAAAAAAADZgAAwAAAABAAAADOL8TT+XmiUnjTHZHLe5BUAAAAAASAAACgAAAAEAAAAIaPi9Lu9wwVa+bdrq0d2/sgAAAAwjdHU5gVJXMIO/a5JLUBIaGvWfmqQ7WpdUObKRin3DEUAAAABtT+AghnXvmI5w5vDIpQel/W1rI=</AdministratorPassword>
+    <PublishUserName>poopadmin</PublishUserName>
+    <PublishUserPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+zofnmy+60ip30Iav6hAnAAAAAACAAAAAAADZgAAwAAAABAAAACGX3jQLKd08jvfGpWMBxhsAAAAAASAAACgAAAAEAAAALfE/5RpeEIjAS3WH+7rDSEgAAAAC2BB8ycCUkqXByQaZtVE6qqjFlY5LfDJEM0pY9D8izkUAAAAOPFid3+btOKpAU9SvpW/PWNO4Rc=</PublishUserPassword>
+    <SchemaManagementSchemaBuildState>0</SchemaManagementSchemaBuildState>
+    <SchemaManagementLastModelWriteTime>634684196854859032</SchemaManagementLastModelWriteTime>
+  </PropertyGroup>
+</Project>

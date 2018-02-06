@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pooptesst" Class="PoopStatsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=jserver;Initial Catalog=pooptesst;Persist Security Info=True;User ID=poop" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="pooptesstConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetOrgName" Method="GetOrgName">
+    <Parameter Name="ORGID" Parameter="oRGID" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="GetOrgNameResult">
+      <Column Name="ORGname" Type="System.String" DbType="NChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetGiftTotal" Method="GetGiftTotal">
+    <Parameter Name="ORGID" Parameter="oRGID" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="GetGiftTotalResult">
+      <Column Name="total" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
